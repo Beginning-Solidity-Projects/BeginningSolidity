@@ -28,7 +28,7 @@ contract ZooManagement {
     }
 
     function addAnimal(string memory _species, string memory _name, uint _age) public {
-        require(animalCount < 3, "Zoo is full"); // corregido el require
+        require(animalCount < 3, "Zoo is full");
         listofAnimals.push(Animal(_species, _name, _age));
         animalCount++;
     }
